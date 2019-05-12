@@ -1,0 +1,18 @@
+###服务启动端口号
+server:
+  port: 8080
+spring:
+###数据库相关连接      
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/design_pattern?useUnicode=true&characterEncoding=UTF-8
+####打印MyBatias日志    
+logging:
+  level:
+  ### 开发环境使用DEBUG 生产环境info或者error
+   com.cx.member.mapper: DEBUG
+   
+
+   
