@@ -54,7 +54,7 @@ AliPayStrategy，YinLianPayStrategy等为调用算法实际实现
 
 2control接受到请求 使用PayContextStrategy调用具体支付算法
 
-3PayContextStrategy根据pay_code重数据库拿到具体的支付算法实现类的bean名称，最后获取bean调用办法。
+3PayContextStrategy根据pay_code重数据库拿到具体的支付算法实现类的bean名称，最后获取bean调用算法实现。
 
 扩展： PayContextStrategy本身也继承一个接口 ，接口的实现类可以通过数据库获取bean,也能通过缓存，也能通过配置文件，这样扩展可以理解为桥接模式。
 
